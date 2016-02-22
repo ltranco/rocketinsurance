@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rocketinsurance'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,22 +51,22 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'rocketinsurance.urls'
 
-TEMPLATES = (
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + "/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug': DEBUG,
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'debug': DEBUG,
         },
     },
-)
+]
 
 WSGI_APPLICATION = 'rocketinsurance.wsgi.application'
 
@@ -114,16 +115,15 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
-
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
     os.path.join(PROJECT_ROOT, 'static'),
-]
+    #'/var/www/static/',
+)
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
