@@ -1,0 +1,1 @@
+web: gunicorn rocketinsurance.wsgi --log-file -
