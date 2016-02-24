@@ -1,127 +1,71 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Rocket Life Insurance</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		{% load staticfiles %}
-		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
-	</head>
-	<body class="landing">
+{% extends "layout.html" %}
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+{% block content %}
+<!-- Banner -->
+<section id="banner">
+  <div class="inner">
+    <h2>Rocket Life Insurance</h2>
+    <p>Push a button. Get a plan.</p>
+    <ul class="actions">
+      <li><a href="/q" class="button special">Get Started</a></li>
+    </ul>
+  </div>
+  <a href="#one" class="more scrolly">Learn More</a>
+</section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">ROCKET LIFE INSURANCE</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+<!-- One -->
+<section id="one" class="wrapper style4 special">
+  <div class="inner">
+    <header class="major">
+      <h2>We have reinvented life insurance.<br />
+        We put the power into your hands.
+      </h2>
+      <p>This is how we are doing it. Some other catchy stuff here.</p>
+    </header>
+    <ul class="icons major">
+      <li><span class="icon fa-apple major style1"><span class="label">Lorem</span></span></li>
+      <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+      <li><span class="icon fa-cog major style3"><span class="label">Dolor</span></span></li>
+    </ul>
+  </div>
+</section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Rocket Life Insurance</h2>
-							<p>Push a button. Get a plan.</p>
-							<ul class="actions">
-								<li><a href="#" class="button special">Get Started</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+<!-- Two -->
+<section id="two" class="wrapper alt style2">
+  <section class="spotlight">
+    <div class="image"><img src="https://static.pexels.com/photos/8704/pen-idea-bulb-paper-large.jpg" alt="" /></div>
+    <div class="content">
+      <h2>No more paperwork</h2>
+      <p>This is how we are going to remove these paperwork issues. We can definitely remove paperwork.</p>
+    </div>
+  </section>
+  <section class="spotlight">
+    <div class="image"><img src="https://static.pexels.com/photos/2830/lights-light-bulb-idea-large.jpg" alt="" /></div>
+    <div class="content">
+      <h2>Real solution. No gimmickss.</h2>
+      <p>This is why we are the real deal. You can trust us. No doubt about that.</p>
+    </div>
+  </section>
+  <section class="spotlight">
+    <div class="image"><img src="https://static.pexels.com/photos/3501/road-street-driving-hurry-large.jpg" alt="" /></div>
+    <div class="content">
+      <h2>Get qualified. Fast.</h2>
+      <p>We move at lightning speed because we do things efficiently. You will get these pretty fast.</p>
+    </div>
+  </section>
+</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>We have reinvented life insurance.<br />
-								We put the power into your hands.</h2>
-								<p>This is how we are doing it. Some other catchy stuff here.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-apple major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-cog major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="" /></div><div class="content">
-								<h2>No more paperwork</h2>
-								<p>This is how we are going to remove these paperwork issues. We can definitely remove paperwork.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="" /></div><div class="content">
-								<h2>Real solution. No gimmickss.</h2>
-								<p>This is why we are the real deal. You can trust us. No doubt about that.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="" /></div><div class="content">
-								<h2>Get qualified. Fast.</h2>
-								<p>We move at lightning speed because we do things efficiently. You will get these pretty fast.</p>
-							</div>
-						</section>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Life insurance</h2>
-								<p>Getting life insurance is easy for contractors and independent workers.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Get Started</a></li>
-								<li><a href="#" class="button fit">Talk to an agent</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>Rocket Life Insurance &copy; 2016</li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			{% load staticfiles %}
-			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
-			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'assets/js/skel.min.js' %}"></script>
-			<script src="{% static 'assets/js/util.js' %}"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="{% static 'assets/js/main.js' %}"></script>
-
-	</body>
-</html>
+<!-- CTA -->
+<section id="cta" class="wrapper style4">
+  <div class="inner">
+    <header>
+      <h2>Life insurance</h2>
+      <p>Getting life insurance is easy for contractors and independent workers.</p>
+    </header>
+    <ul class="actions vertical">
+      <li><a href="#" class="button fit special">Get Started</a></li>
+      <li><a href="#" class="button fit">Talk to us</a></li>
+    </ul>
+  </div>
+</section>
+{% endblock %}
