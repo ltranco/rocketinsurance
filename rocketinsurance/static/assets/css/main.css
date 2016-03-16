@@ -2219,6 +2219,10 @@
 
 /* Button */
 
+	.greenButton {
+		background-color:#6c9f2e !important;
+		box-shadow: none !important;
+	}
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -3374,7 +3378,29 @@
 			}
 
 /* Banner */
-
+	.redBanner {
+		background-color: #d02542;
+		width: 350px;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 0.5em;
+		padding: 5px 15px 5px 15px;
+	}
+	.blackTagline {
+		color: black;
+		font-weight: 600;
+		font-size: 17px;
+		letter-spacing: 0.1em !important;
+	}
+	.content h2 {
+		font-size: 25px;
+		font-weight: 700;
+		letter-spacing: 0.1em !important;
+		text-transform: none;
+	}
 	#banner {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3394,10 +3420,12 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");
+		/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://lasadiccionestienensolucion.com/wp-content/uploads/2014/06/10218312_l.jpg");*/
+		background-image: url("/static/images/rocket-bg.jpg");
+
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
