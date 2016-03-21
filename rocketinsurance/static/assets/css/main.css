@@ -3447,6 +3447,7 @@
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+			text-shadow: 1px 1px black;
 		}
 
 			#banner h2:before, #banner h2:after {
