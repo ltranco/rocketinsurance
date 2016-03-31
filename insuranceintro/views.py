@@ -11,6 +11,14 @@ class ElementView(View):
     def get(self, request):
         return render(request, "elements.html")
 
-class QuestionView(View):
+class TermView(View):
     def get(self, request):
-        return render(request, "questions.html")
+        return render(request, "term.html")
+
+class PermView(View):
+    def get(self, request):
+        return render(request, "perm.html")
+
+class ContactView(View):
+    def get(self, request):
+        return render(request, "contact.html")

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="wrapper style2">
+  <div class="inner">
+    <h4>Contact Us</h4>
+    <form method="post" action="#">
+      <div class="row uniform">
+        <div class="4u 4u$(xsmall)">
+          <input type="text" name="demo-name" value="" placeholder="Name *" />
+        </div>
+        <div class="4u 4u$(xsmall)">
+          <input type="email" name="demo-email" value="" placeholder="Email *" />
+        </div>
+        <div class="4u 4u$(xsmall)">
+          <input type="text" name="demo-email" value="" placeholder="Phone" />
+        </div>
+        <div class="12u">
+          <textarea placeholder="Type your message ..."></textarea>
+        </div>
+        <div class="12u$">
+          <ul class="actions">
+            <li><input type="submit" value="Send" class="special" /></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+    <p>If you prefer to talk to an agent, please call or text us at <i class="fa fa-phone"></i> (415) 730 - 2942.</p>
+  </div>
+</section>
+{% endblock %}

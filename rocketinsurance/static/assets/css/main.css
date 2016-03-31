@@ -57,6 +57,9 @@
 	}
 
 /* Grid */
+	.style6 {
+		background-color: white !important;
+	}
 
 	.row {
 		border-bottom: solid 1px transparent;
@@ -3301,6 +3304,9 @@
 			position: absolute;
 			right: 0;
 			top: 0;
+			background-color: #2e3842;
+			width: 100%;
+			text-align: right;
 		}
 
 			#header nav > ul {
@@ -3442,7 +3448,7 @@
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 2.75em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3727,11 +3733,26 @@
 	}
 
 /* Footer */
+	.legal-text {
+		font-size: 10px;
+		text-align: left;
+	}
+	.legal-div {
+		border-top: 1px solid black;
+		padding: 0 50px 0 50px;
+	}
+	#footer ul, h3 {
+		list-style: none;
+		color: black;
+		text-align: left;
+		margin: 0;
+	}
 
 	#footer {
-		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		padding: 0 0 3em 0 ;
 		text-align: center;
+		background-color: white !important;
+		color: black;
 	}
 
 		#footer .icons {
@@ -3739,7 +3760,7 @@
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: black;
 			}
 
 				#footer .icons a:hover {
